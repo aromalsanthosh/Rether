@@ -9,12 +9,12 @@ const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-ce
 
 const Input = ({placeholder,name,type,value,handleChange}) => (
   <input 
-    placeholder={placeholder} 
-    type={type}
-    step="0.0001"
-    value={value}
-    onChange={(e) => handleChange(e,name)}
-    className="my-2 w-full rounded-sm p-2 outine-none bg-transparent text-white border-none text-sm white-glassmorphism"
+  placeholder={placeholder}
+  type={type}
+  step="0.0001"
+  value={value}
+  onChange={(e) => handleChange(e, name)}
+  className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
     />
     
 )
@@ -27,30 +27,31 @@ const  Welcome = () => {
 
   return (
     <div className='flex w-full justify-center items-center'>
-      <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4'>
-        <div className='flex flex-1 justify-start items-start flex-col mf:mr-10'></div>
-        <h1 className='text-3xl sm:text-5xl text-white text-gradient py-1'>
-          Send Crypto <br /> across the world
-        </h1>
-        <p className='text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base'>
-          Explore the crypto world buy and sell crypto coins easily, <br /> trusted cryptoon to be your crypto market partner
-        </p>
+        <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4'>
+          <div className='flex flex-1 justify-start items-start flex-col mf:mr-10'>
+          <h1 className='text-3xl sm:text-5xl text-white text-gradient py-1'>
+            Send Crypto <br /> across the world
+          </h1>
+          <p className='text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base'>
+            Explore the crypto world buy and sell crypto coins easily, <br /> trusted cryptoon to be your crypto market partner
+          </p>
 
-        <button
-        type='button'
-        onClick={connectWallet}
-        className = 'flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]'
-        >
-          <p className='text-white text-base font-semibold'>Connect Wallet</p> 
-        </button>
+          <button
+          type='button'
+          onClick={connectWallet}
+          className = 'flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]'
+          >
+            <p className='text-white text-base font-semibold'>Connect Wallet</p> 
+          </button>
 
-        <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
-          <div className={`rounded-tl-2xl ${commonStyles}`}>Reilablity</div>
-          <div className={commonStyles}>Security</div>
-          <div className={`rounded-tr-2xl ${commonStyles}`}>Ethereum</div>
-          <div className={`rounded-bl-2xl ${commonStyles}`}>Web 3.0</div>
-          <div className={commonStyles}>Low fees</div>
-          <div className={`rounded-br-2xl ${commonStyles}`}>Blockchain</div>
+          <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
+            <div className={`rounded-tl-2xl ${commonStyles}`}>Reilablity</div>
+            <div className={commonStyles}>Security</div>
+            <div className={`rounded-tr-2xl ${commonStyles}`}>Ethereum</div>
+            <div className={`rounded-bl-2xl ${commonStyles}`}>Web 3.0</div>
+            <div className={commonStyles}>Low fees</div>
+            <div className={`rounded-br-2xl ${commonStyles}`}>Blockchain</div>
+          </div>
         </div>
       </div>
 
