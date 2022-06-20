@@ -9,12 +9,12 @@ const commonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-ce
 
 const Input = ({placeholder,name,type,value,handleChange}) => (
   <input 
-  placeholder={placeholder}
-  type={type}
-  step="0.0001"
-  value={value}
-  onChange={(e) => handleChange(e, name)}
-  className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
+    placeholder={placeholder}
+    type={type}
+    step="0.0001"
+    value={value}
+    onChange={(e) => handleChange(e, name)}
+    className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
     />
     
 )
@@ -26,9 +26,9 @@ const  Welcome = () => {
   const handleSubmit = () => {}
 
   return (
-    <div className='flex w-full justify-center items-center'>
-        <div className='flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4'>
-          <div className='flex flex-1 justify-start items-start flex-col mf:mr-10'>
+    <div className="flex w-full justify-center items-center">
+      <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
+        <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
           <h1 className='text-3xl sm:text-5xl text-white text-gradient py-1'>
             Send Crypto <br /> across the world
           </h1>
@@ -53,7 +53,6 @@ const  Welcome = () => {
             <div className={`rounded-br-2xl ${commonStyles}`}>Blockchain</div>
           </div>
         </div>
-      </div>
 
       <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
         <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
@@ -88,7 +87,7 @@ const  Welcome = () => {
                                           className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer" >Send Now</button>}
         </div>
       </div>
-
+    </div>
     </div>
   )
 }
