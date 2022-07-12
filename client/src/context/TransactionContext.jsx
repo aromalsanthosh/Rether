@@ -60,7 +60,7 @@ export const TransactionProvider = ({ children }) => {
           ).toLocaleString(),
           message: transaction.message,
           keyword: transaction.keyword,
-          amount: parseInt(transaction.amount._hex) / 10 ** 18,
+          amount: parseInt(transaction.amount._hex),
         })
       );
 
@@ -78,7 +78,10 @@ export const TransactionProvider = ({ children }) => {
       const accounts = await ethereum.request({ method: "eth_accounts" });
 
       if (accounts.length) {
-        setCurrentAccount(accounts[0]);
+        const provider = new ethers.providers.Web3Provider(ethereum);
+        const signer = provider.getSigner();
+        const val = await signer.getAddress();
+        setCurrentAccount(val);
         getAllTransactions();
         //get all transactions
       } else {
@@ -98,7 +101,11 @@ export const TransactionProvider = ({ children }) => {
         method: "eth_requestAccounts",
       });
 
-      setCurrentAccount(accounts[0]);
+      const provider = new ethers.providers.Web3Provider(ethereum);
+      const signer = provider.getSigner();
+      const val = await signer.getAddress();
+      console.log(val);
+      setCurrentAccount(val);
     } catch (error) {
       console.log(error);
 
