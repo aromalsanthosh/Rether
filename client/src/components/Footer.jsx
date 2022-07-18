@@ -21,10 +21,17 @@ const Footer = () => (
         <p className="text-white text-base text-center mx-2 cursor-pointer">
           Wallets
         </p>
-      </div>
+      </div>   
     </div>
 
     <div className="sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5 " />
+    <p className="text-white text-base text-center mx-1 cursor-pointer mt-2">  
+          ©2022 KTU Mini Project done by 
+          <a href="https://aromalsanthosh.com" target="_blank" className="text-white text-base text-center mx-2 cursor-pointer">Aromal S</a>,
+          <a href="" className="text-white text-base text-center mx-2 cursor-pointer">Noel Jose TP</a>
+          &
+          <a href="" className="text-white text-base text-center mx-2 cursor-pointer">Pooja M</a>
+    </p>
   </div>
 );
 
