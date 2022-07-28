@@ -1,2 +1,2 @@
-## Crypto Exchange App - Rether
+## Web3 Ethereum Blockchain Application - Rether
 
